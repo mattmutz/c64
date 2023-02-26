@@ -1,0 +1,26 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>C64</title>
+
+      <link rel="stylesheet" href="c64.css">
+  
+</head>
+
+<!-- http://www.dynamicdrive.com/forums/showthread.php?17450-Emulating-a-terminal-like-caret-with-javascript-and-css -->
+
+<div class="frame">
+  <h1 class="heading">**** Commodore 64 ****</h1>
+  <h2 class="heading">64K ram system 38911 basic bytes free</h2>
+  <span class="heading heading_span">Ready .</span>
+
+  <div id="terminal" onclick="$('setter').focus();">
+    <textarea type="text" id="setter" onkeydown="writeit(this, event);moveIt(this.value.length, event)" onkeyup="writeit(this, event)" onkeypress="writeit(this, event);" autofocus></textarea>
+    <div id="getter">
+      <span id="writer"></span><b class="cursor" id="cursor">H</b>
+    </div>
+  </div>
+</div>
+  
+</body>
+</html>
