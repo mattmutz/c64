@@ -94,6 +94,11 @@ textarea#setter {
   margin-left: 12px;
 }
 
+#terminal a:link, #terminal a:visited, #terminal a:hover, #terminal a:active {
+    text-decoration: none;
+    color: #fff;
+}
+
 @-webkit-keyframes "blink" {
   from,
   to {

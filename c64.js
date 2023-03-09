@@ -1,11 +1,11 @@
-			function $(elid){ /* shortcut for d.gEBI */
-				return document.getElementById(elid);
-			}
+function $(elid){ /* shortcut for d.gEBI */
+    return document.getElementById(elid);
+}
 
-			var cursor; /* global variable */
-			window.onload = init;
+var cursor; /* global variable */
+window.onload = init;
+
 function init(){
-    console.log('in it');
 				cursor = $("cursor"); /* defining the global var */
 				cursor.style.left = "0px"; /* setting it's position for future use */
 			}
@@ -15,7 +15,8 @@ function init(){
 			}
 			
 			function writeit(from, e){ /* the magic starts here, this function requires the element from which the value is extracted and an event object */
-				e = e || window.event; /* window.event fix for browser compatibility */
+			return;	
+            e = e || window.event; /* window.event fix for browser compatibility */
 				var w = $("writer"); /* get the place to write */
 				var tw = from.value; /* get the value of the textarea */
 				w.innerHTML = nl2br(tw); /* convert newlines to breaks and append the returned value to the content area */
@@ -33,6 +34,3 @@ function init(){
 
 			}
 			
-			function alert(txt){ // for debugging
-			console.log(txt); // works only with firebug
-			}
