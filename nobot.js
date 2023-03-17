@@ -1,11 +1,8 @@
-console.log('hullo');
 function delay(time) {
   return new Promise(resolve => setTimeout(resolve, time));
 }
 document.addEventListener('DOMContentLoaded', async function() {
     await delay(750);
-    console.log('i wated 4 u');
-    // jQuery("#setter").val("LOAD \"*\",8")
     jQuery("#writer").html("load \"*\",8<br/>");
     await delay(500);
     jQuery("#writer").append("<br/>searching for *<br/>");
